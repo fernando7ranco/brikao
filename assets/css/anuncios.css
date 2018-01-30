@@ -1,0 +1,173 @@
+
+#filtroAnuncio{
+    position:fixed;
+	left:0px;
+	top:50px;
+	padding:10px;
+	padding-top:5px;
+	border-right:1px solid rgba(0,0,0,0.1) ;
+    width:270px;
+	height:90%;
+    font-size: 12px;
+	background:#fff;
+	z-index:2;
+	overflow-y:auto;
+}
+
+#filtroAnuncio select, #filtroAnuncio input[type=text]{
+    padding:5px 5px;
+	outline:none;
+    margin:1px;
+    border-radius:2px;
+    font-size:12px;
+    border:1px solid rgba(0,0,0,0.1);
+	width:95%
+}
+#filtroAnuncio select{
+	cursor:pointer;
+	width:100%;
+	text-transform:uppercase;
+}
+
+#autocomplete-bairro div{
+	display:none;
+    position:absolute;
+	width:250px;
+	background:#fff;
+	padding:2px;
+	border:1px solid rgba(0,0,0,0.1);
+}
+#autocomplete-bairro div span{
+	padding:5px 10px;
+}
+#autocomplete-bairro div a{
+	padding:5px;
+	color:blue;
+	display:block;
+	font-size:12px;
+	cursor:pointer;
+	position:relative;
+}#autocomplete-bairro div a:hover{
+	background:blue;
+	color:#fff;
+}
+
+#filtroAnuncio input[name^=valorm]{
+	width:43.3%;
+}#filtroAnuncio select[name^=quilometragem], #filtroAnuncio select[name^=cilindrada], #filtroAnuncio select[name^=ano]{
+	width:49%;
+}
+#filtroAnuncio div:not([id]){
+	 border: 1px solid rgba(0,0,0,0.1);
+	 min-width:45%;
+	 vertical-align:middle;
+	 margin:3px;
+	 padding:4px 10px;
+	
+}
+#filtroAnuncio div:not([id]) input[type=checkbox]{
+	vertical-align:middle;
+}#filtroAnuncio div:not([id]) span{
+	display:inline-block;
+	margin-left:5px;
+	vertical-align:middle;
+}
+#filtroAnuncio button{
+    height:30px;
+    width:48.5%;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+    cursor: pointer;
+    background: #a3d335;
+    border-radius:2px;
+}
+#localAnuncios{
+    margin-top:80px;
+	width:780px;
+    margin-left:310px;
+    padding:30px 20px;
+    border-top:1px solid rgba(0,0,0,0.07);
+    border-bottom:1px solid rgba(0,0,0,0.08);
+    position:relative;
+}
+a{
+    text-decoration:none;
+	color:#000;
+}
+#semAnuncio{
+    width:400px;
+    margin:25px auto;
+    text-transform:uppercase;
+}
+#anuncio{
+    width:350px;
+    min-height:370px;
+    vertical-align:middle;
+    display:inline-block;
+    border:1px solid rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.08);
+    padding:8px;
+    padding-bottom:35px;
+    margin:4px;
+    border-radius:2px;
+    font-size:12px;
+    word-wrap: break-word;
+    color:#555;
+    position:relative;
+}
+#anuncio p{
+    line-height:0.5;
+}
+
+#anuncio p:nth-last-child(1){
+    padding:6px 10px;
+    font-weight:bold;
+    color:white;
+    background:#4CAF50;
+    text-shadow: 1px 1px #555;
+    position:absolute;
+    bottom:5px;
+    width:88%;
+}
+
+#anuncio #l-img{
+	width:350px;
+	height:250px;
+
+}#anuncio #l-img img{
+	max-width:350px;
+	max-height:250px;
+}
+
+
+#paginalizacao{
+    display:inline-block;
+    margin:4px auto;
+    padding:2px 20px;
+    border-radius:5px;
+    background:#f0f0f0;
+    border:1px solid rgba(0,0,0,0.1);
+	font-size:16px;
+	font-weight:bold;
+}
+#paginalizacao a{
+    padding:8px 6px;
+	min-width:15px;
+    text-align:center;
+    font-size:13px;
+    border-radius:2px;
+    border:1px solid rgba(0,0,0,0.1);
+    display:inline-block;
+    margin:3px;
+    cursor:pointer;
+    background:#fff;
+}
+#paginalizacao a:hover ,#paginalizacao a[id=foco]{
+    transition-duration:0.3s;
+    background:#1a5e9e;
+    color:white;
+}

@@ -1,0 +1,143 @@
+
+#localAnuncios{
+	width:780px;
+	margin:60px auto;
+	padding:30px 20px;
+	border-top:1px solid rgba(0,0,0,0.07);
+	border-bottom:1px solid rgba(0,0,0,0.08);
+	position:relative;
+}
+
+a{
+	text-decoration:none;
+	color:#555;
+}
+#semAnuncio{
+	width:700px;
+	margin:25px auto;
+	text-transform:uppercase;
+}
+#semAnuncio a{
+	font-weight:bold;
+}
+#anuncio{
+	width:350px;
+    min-height:370px;
+    vertical-align:middle;
+    display:inline-block;
+    border:1px solid rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.08);
+    padding:8px;
+    padding-bottom:35px;
+    margin:4px;
+    margin-bottom:25px;
+    border-radius:2px;
+    font-size:12px;
+    word-wrap: break-word;
+    color:#555;
+    position:relative;
+}
+
+#anuncio #localExcluir{
+	position:absolute;
+	top:-26px;
+	left:-1px;
+	width:100.5%;
+	height:106.5%;
+	background:rgba(0,0,0,0.2);
+	border:2px solid red;
+}
+#anuncio #localExcluir div{
+	font-weight:bold;
+	background:#fff;
+	margin:4px;
+	padding:4px 4px 6px 4px;
+	border-radius:2px;
+}
+#anuncio #localExcluir div span#vendiOp{
+	display:none;
+	margin-left:20px;
+}
+
+#anuncio #localExcluir button{
+	padding:10px;
+	font-weight:bold;
+	background:#fff;
+	border:1px solid rgba(0,0,0,0.4);
+	text-transform:uppercase;
+	cursor:pointer;
+	width:45%;
+	margin:6px;
+}
+#anuncio #button:hover{
+	font-weight:bold;
+	padding:5px 9px;
+}
+#anuncio #button{
+	position:absolute;
+	bottom:100%;
+	background:#fff;
+	text-transform:uppercase;
+	outline:none;
+	border:1px solid rgba(0,0,0,0.1);
+	border-bottom:none;
+	cursor:pointer;
+	padding:5px 10px;
+	border-radius:4px 6px  0px  0px;
+}
+#anuncio #button:nth-child(1){
+	left:3px;
+}#anuncio #button:nth-child(2){
+	left:100px;
+}
+#anuncio p{
+	line-height: 0.5;
+}
+#anuncio p:nth-last-child(1){
+	padding:6px 10px;
+	font-weight:bold;
+	color:white;
+	background:#4CAF50;
+	text-shadow: 1px 1px #555;
+	position:absolute;
+	bottom:5px;
+	width:88%;
+}
+
+#anuncio #l-img{
+	width:350px;
+	height:250px;
+
+}#anuncio #l-img img{
+	max-width:350px;
+	max-height:250px;
+}
+
+
+#paginalizacao{
+    display:inline-block;
+    margin:4px auto;
+    padding:2px 20px;
+    border-radius:5px;
+    background:#f0f0f0;
+    border:1px solid rgba(0,0,0,0.1);
+	font-size:16px;
+	font-weight:bold;
+}
+#paginalizacao a{
+    padding:8px 6px;
+	min-width:15px;
+    text-align:center;
+    font-size:13px;
+    border-radius:2px;
+    border:1px solid rgba(0,0,0,0.1);
+    display:inline-block;
+    margin:3px;
+    cursor:pointer;
+    background:#fff;
+}
+#paginalizacao a:hover ,#paginalizacao a[id=foco]{
+    transition-duration:0.3s;
+    background:#1a5e9e;
+    color:white;
+}

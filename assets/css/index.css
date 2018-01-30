@@ -1,0 +1,273 @@
+body{
+    margin:0px;
+    width:100%;
+	font: normal normal normal 12px/120% Arial;
+    color: #333;
+}
+header{
+    font-size:16px;
+    padding:10px 2px;
+}
+#logoBRIKAO{
+    width:300px;
+    margin-left:90px;
+    margin-right:10px;
+	vertical-align:middle;
+}
+header div{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+header span{
+	font-weight:bold;
+	text-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+header a{
+	display:block;
+	margin-top:2px;
+	font-size:13px;
+}
+
+#titleTooltip{
+    font-weight:bold;
+    position:absolute;
+    border-radius:3px;
+    color:white;
+    background:#1E1E1E;
+    padding:5px 15px;
+    font-family:monospace;
+    z-index:10;
+    text-transform:uppercase;
+    font-size:13px;
+    max-width:180px;
+    text-align:center;
+    display:none;
+}
+
+#caixaCentro{
+    width:1100px;
+    margin:1% auto;
+    padding:30px 20px;
+    border-top:1px solid rgba(0,0,0,0.07);
+    border-bottom:1px solid rgba(0,0,0,0.08);
+}
+#caixaCentro #esquerda{
+    display:inline-block;
+    width:40%;
+    vertical-align:top;
+    padding:3px;
+    position:relative;
+}	
+
+#caixaCentro #esquerda span{
+    display:inline-block;
+    background:#a3d335;
+    width:49%;
+    text-align:center;
+    padding:10px 0px;
+    margin-bottom:5px;
+    color:#fff;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+    cursor:pointer;
+    text-transform:uppercase;
+    border:1px solid #C3C3C3;
+    border-radius:1px;
+}
+#caixaCentro #esquerda #semFoco{
+    opacity:0.4;
+}
+#caixaCentro #esquerda #semFoco:hover{
+    opacity:1;
+    transition-duration:0.3s;
+}
+#forms{
+    height:430px;
+    border:1px solid rgba(0,0,0,0.09);
+}
+#caixaCentro #forms p #textoInput:before{
+    content:'';
+    position:absolute;
+    right:100%;
+    top:20%;
+    border:6px solid transparent;
+    border-right-color:#000;
+}
+
+#caixaCentro #forms p #textoInput{
+    position:absolute;
+    left:97%;
+    top:5px;
+    z-index:2;
+    background:#000;
+    width:200px;
+    padding:8px 10px;
+    border-radius:3px;
+    color:white;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:10px;
+}
+
+#caixaCentro #esquerda #forms h4{
+    margin:5px 0px 10px 0px;
+    padding:5px 0px;
+    font-family:verdana;
+}
+#caixaCentro #esquerda #login p a:not(#textoInput){
+    text-decoration:none;
+    margin-left:50px;	
+    color:#555;
+}#caixaCentro #esquerda #login p a:not(#textoInput):hover{
+    color:#000;
+    text-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+
+#caixaCentro p{
+    position:relative;
+    font-size:12px;
+}
+#caixaCentro #cadastro p img{
+    width:20px;
+    position:absolute;
+    right:20px;
+    top:-5px
+}
+
+#caixaCentro form input[name=email]{
+    background:url(../img/icones/iconEmail.png)no-repeat 97% 50%;
+    background-color:white;
+    background-size:20px;
+}#caixaCentro form input[name^=senha]{
+    background:url(../img/icones/iconCadeado.png)no-repeat 97% 50%;
+    background-color:white;
+    background-size:20px;
+}
+#caixaCentro form input[placeholder]{
+    width:75%;
+    height:20px;
+    padding:8px 8px;
+    padding-right:40px;
+    outline:none;
+    border:1px solid #dedede;
+    background-color:rgba(0,0,0,0.02);
+}
+
+
+#caixaCentro form input[id=Mlogado]{
+    margin-left:-30px;
+}
+#caixaCentro form input[id=vsenha]{
+    margin-left:-190px;
+}
+#caixaCentro form button[type=button]{
+    width:85%;
+    margin:10px;
+    padding:8px;
+    outline:none;
+    border:1px solid rgba(0,0,0,0.1);
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:15px;
+    color:white;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    background:#a3d335;
+}
+#caixaCentro form button:active{
+    transition-duration:0.2s;
+	color:#000;
+    box-shadow:inset 0 0 10px #dedede; 
+}
+
+#caixaCentro form #button[class=aindanao]{
+    cursor:not-allowed;
+}
+
+.iconeWebSite{
+    height:35px;
+    width:85%;
+    margin:4px auto;
+    cursor:pointer;
+    font-weight:bold;
+    color:white;
+	font-size:16px;
+    border-radius:2px;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+.iconeWebSite[id^=facebook]{
+    background:#4A6EAA;
+}.iconeWebSite[id^=google]{
+    background:#df493a;
+}
+.iconeWebSite img#icone{
+    height:35px;
+    border-right:1px solid white;
+    vertical-align:middle;
+}
+.iconeWebSite img:nth-child(2){
+    float:right;
+    margin:2px 10px;
+    height:30px;
+}
+
+#caixaCentro #direita{
+    display:inline-block;
+    width:55%;
+    margin-left:10px;
+	position:relative;
+}
+#caixaCentro #direita span{
+	margin-left:50px;
+    background:#a3d335;
+    color:white;
+    border-radius:3px;
+    padding:4px 10px;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:13px;
+    border:1px solid #80a637;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 2px 3px 4px rgba(0,0,0,0.1);
+}
+
+#caixaCentro #direita #lista-estados{
+	display:inline-block;
+	position:absolute;
+	bottom:2px;
+	left:0;
+}
+
+
+#caixaCentro #direita #lista-estados a:not(.this-hover){
+	padding:1px 5px;
+	color:#000;
+	font-size:11px;
+	text-decoration:none;
+	display:inline-block;
+	cursor:pointer;
+}
+
+#caixaCentro #direita #lista-estados a:hover{
+	transition-duration:0.4s;
+	font-weight:bold;
+	font-size:13px;
+	margin-left:8px;
+	background:#000;
+	color:#fff;
+	border-radius:3px;
+}
+#caixaCentro #direita #lista-estados .this-hover{
+	transition-duration:0.4s;
+	padding:1px 5px;
+	text-decoration:none;
+	display:inline-block;
+	font-weight:bold;
+	font-size:13px;
+	margin-left:8px;
+	background:#000;
+	color:#fff;
+	border-radius:3px;
+}

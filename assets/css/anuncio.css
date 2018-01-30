@@ -1,0 +1,287 @@
+
+#localAnuncio{
+    width:1000px;
+    margin:60px auto;
+    padding:30px 20px;
+    border-top:1px solid rgba(0,0,0,0.07);
+    border-bottom:1px solid rgba(0,0,0,0.08);
+    position:relative;
+}
+
+#anuncioUnico{
+    width:700px;
+    margin:0px auto;
+    padding:5px 20px;
+    word-wrap: break-word;
+    border:1px solid rgba(0,0,0,0.05);
+    font-size:14px;
+}
+
+#irChat,#denunciarAnuncio{
+    width:150px;
+    margin:5px;
+    height:30px;
+    padding:4px 2px;
+    cursor:pointer;
+    border:1px solid rgba(0,0,0,0.1);
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:13px;
+    color:white;
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    background:#a3d335;
+}
+#localImgs{
+    border:1px solid rgba(0,0,0,0.05);
+    display:table;
+    padding:5px 3px;
+    border-radius:4px;
+}
+#localImgPrincipal{
+    width:550px;
+    height:400px;
+    display:flex;
+    vertical-align:top;
+    float:left;
+}
+
+.zoom{
+    display:inline-block;
+    position:relative;
+    cursor:crosshair;
+    align-self: center;
+    margin:0px auto;
+}.zoom:after {
+    content:'';
+    display:block; 
+    width:33px; 
+    height:33px; 
+    position:absolute; 
+    top:0;
+    right:0;
+    background:url(../img/icones/lupa.png);
+}
+.zoom img{
+	background-color:#fff;
+}
+#localImgPrincipal #imgPrincipal{
+    display:block;
+    max-width:550px;
+    max-height:400px;
+    margin:0px auto;
+    border-radius:2px;
+}
+#locaImgInferiores{
+    width:130px;
+    height:400px;
+    display:inline-block;
+    float:right;
+    overflow-y:auto;
+    overflow-x:hidden;
+    margin-left:4px;
+}#locaImgInferiores::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}#locaImgInferiores::-webkit-scrollbar{
+    width:6px;
+}#locaImgInferiores::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    background-color:rgba(0,0,0,0.05);
+}
+
+#locaImgInferiores #imgInferiores{
+    width:110px;
+    height:100px;
+    cursor:pointer;
+    border:2px solid transparent;
+    border-radius:2px;
+}
+#locaImgInferiores #imgInferiores[class=foco]{
+    border:2px solid red;
+	opacity:0.2;
+}
+#localImgs #imgInferiores:not([class=foco]):hover{
+    transition-duration:0.4s;
+    border:2px solid red;
+}
+
+#localComentarios h2{
+    padding: 0 0 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #555;
+}
+
+#caixaAddComentarios{
+    border:1px solid rgba(0,0,0,0.2);
+    width:96%;
+    outline:none;
+    height:60px;
+    padding:10px;
+    resize:none;
+    border-radius:3px;
+    background:rgba(0,0,0,0.02);
+}
+
+#btAddComentarios{
+    height:30px;
+    border:1px solid rgba(0,0,0,0.1);
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:13px;
+    color:white;
+    margin:3px;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+    cursor:pointer;
+    background:#a3d335;
+}
+#comentario{
+    border-bottom:1px solid rgba(0,0,0,0.08);
+    padding:8px;
+}
+#comentario #headComentario{
+    text-transform:capitalize;
+    font-size:12px;
+}#comentario #headComentario a{
+    font-weight:bold;
+    color:#555;
+}
+#comentario #excluirComentario{
+    text-transform:uppercase;
+    font-weight:bold;
+    width:13px;
+    margin-bottom:-3px;
+    padding:1px;
+    border-radius:50%;
+
+}#comentario #excluirComentario:hover{
+    cursor:pointer;
+    transition-duration:0.2s;
+    background:#B22222;
+}
+
+#comentario #bloquearUsuario:hover{
+    cursor:pointer;
+    transition-duration:0.2s;
+    color:#B22222;
+}
+
+#comentario span{
+    font-size:11px;
+    color:#000;
+    margin-left:10px;
+    word-wrap: break-word;
+    display:inline-block;
+    max-width:100%;
+}
+#comentarioResposta{
+    margin:4px 0px 4px 30px;
+}
+
+#comentarioResposta div{
+    text-transform:capitalize;
+    font-size:12px;
+    color:#555;
+}
+
+#comentario #btResponderComentario{
+    display:block;
+	width:100px;
+    margin:3px;
+    color:#767676;
+    cursor:pointer;
+    font-size:12px;
+}#comentario #btResponderComentario:hover{
+    color:#427fed;
+    cursor:pointer;
+    text-decoration:underline;
+}
+#comentario #caixaResponderComentario textarea{
+    border:1px solid rgba(0,0,0,0.2);
+    width:100%;
+    outline:none;
+    height:70px;
+    padding:5px;
+    margin:3px;
+    resize:none;
+}
+
+#caixaResponderComentario button{
+    height:30px;
+    border:1px solid rgba(0,0,0,0.1);
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:13px;
+    margin:3px;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+    cursor:pointer;
+}
+
+#caixaResponderComentario button[id=can]{
+    color:#555;
+    background:#f9f9f9;
+}
+
+#caixaResponderComentario button[id=res]{
+    color:white;
+    background:#a3d335;
+}
+
+#carregarMaisComentarios{
+    border:1px solid rgba(0,0,0,0.1);
+    width:96%;
+    margin:4px;
+    padding:8px;
+    text-align:center;
+    background:#555;
+    color:white;
+    cursor:pointer;
+    border-radius:3px;
+}
+
+#localFazerDenunciaAnuncio textarea{
+    width:100%;
+    height:80px;
+    resize:none;
+    padding:5px;
+    border-radius:3px;
+}
+
+#conteudoLightbox button{
+    height:40px;
+    width:150px;
+    border:1px solid rgba(0,0,0,0.1);
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:15px;
+    color:white;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+    cursor:pointer;
+    background:#a3d335;
+    margin:2px;
+}
+
+#lightbox{
+    position:fixed;
+    z-index:11;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+    display:flex;
+}
+
+#conteudoLightbox{
+    margin:10px auto;
+    align-self:center;
+    min-width:400px;
+    padding:20px 50px;
+    border-radius:5px;
+    background:#fff;
+}
+
+#conteudoLightbox p{
+	line-height:15px;
+}

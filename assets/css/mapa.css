@@ -1,0 +1,28 @@
+#svg-map{
+	float:right;
+	margin-top:10px;
+}
+#svg-map a:not(#this-hover) path{ 
+	fill:green;
+}
+
+#svg-map text{ 
+	fill:#fff; 
+	font:12px Arial-BoldMT, sans-serif; 
+}
+#svg-map a{ 
+	text-decoration:none;
+	cursor:pointer;
+}
+#svg-map a:hover path, #svg-map a#this-hover path{ 
+	transition-duration:0.4s;
+	fill:#003399 !important 
+}
+#svg-map a:not(#this-hover) .circle{
+	fill:#32CD32 
+}
+#svg-map a:hover .circle, #svg-map a #this-hover .circle{
+	transition-duration:0.4s;
+	fill:#003399 !important;
+}
+
